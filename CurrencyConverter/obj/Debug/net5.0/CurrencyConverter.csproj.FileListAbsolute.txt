@@ -1,0 +1,16 @@
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\obj\Debug\net5.0\CurrencyConverter.csprojAssemblyReference.cache
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\obj\Debug\net5.0\CurrencyConverter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\obj\Debug\net5.0\CurrencyConverter.AssemblyInfoInputs.cache
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\obj\Debug\net5.0\CurrencyConverter.AssemblyInfo.cs
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\obj\Debug\net5.0\CurrencyConverter.csproj.CoreCompileInputs.cache
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\bin\Debug\net5.0\CurrencyConverter.exe
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\bin\Debug\net5.0\CurrencyConverter.deps.json
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\bin\Debug\net5.0\CurrencyConverter.runtimeconfig.json
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\bin\Debug\net5.0\CurrencyConverter.runtimeconfig.dev.json
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\bin\Debug\net5.0\CurrencyConverter.dll
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\bin\Debug\net5.0\ref\CurrencyConverter.dll
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\bin\Debug\net5.0\CurrencyConverter.pdb
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\obj\Debug\net5.0\CurrencyConverter.dll
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\obj\Debug\net5.0\ref\CurrencyConverter.dll
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\obj\Debug\net5.0\CurrencyConverter.pdb
+C:\Users\siarh\RiderProjects\les2\CurrencyConverter\obj\Debug\net5.0\CurrencyConverter.genruntimeconfig.cache
