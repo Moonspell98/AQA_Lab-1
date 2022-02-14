@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\siarh\\RiderProjects\\AQA\\Appointment\\Appointment.csproj": {}
+    "C:\\Users\\siarh\\RiderProjects\\AQA\\Lesson3_Persons\\Lesson3_Persons.csproj": {}
   },
   "projects": {
-    "C:\\Users\\siarh\\RiderProjects\\AQA\\Appointment\\Appointment.csproj": {
+    "C:\\Users\\siarh\\RiderProjects\\AQA\\Lesson3_Persons\\Lesson3_Persons.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\siarh\\RiderProjects\\AQA\\Appointment\\Appointment.csproj",
-        "projectName": "Appointment",
-        "projectPath": "C:\\Users\\siarh\\RiderProjects\\AQA\\Appointment\\Appointment.csproj",
+        "projectUniqueName": "C:\\Users\\siarh\\RiderProjects\\AQA\\Lesson3_Persons\\Lesson3_Persons.csproj",
+        "projectName": "Lesson3_Persons",
+        "projectPath": "C:\\Users\\siarh\\RiderProjects\\AQA\\Lesson3_Persons\\Lesson3_Persons.csproj",
         "packagesPath": "C:\\Users\\siarh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\siarh\\RiderProjects\\AQA\\Appointment\\obj\\",
+        "outputPath": "C:\\Users\\siarh\\RiderProjects\\AQA\\Lesson3_Persons\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[34.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

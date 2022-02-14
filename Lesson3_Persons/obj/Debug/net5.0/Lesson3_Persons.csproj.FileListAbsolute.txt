@@ -1,0 +1,16 @@
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\obj\Debug\net5.0\Lesson3_Persons.csprojAssemblyReference.cache
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\obj\Debug\net5.0\Lesson3_Persons.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\obj\Debug\net5.0\Lesson3_Persons.AssemblyInfoInputs.cache
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\obj\Debug\net5.0\Lesson3_Persons.AssemblyInfo.cs
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\obj\Debug\net5.0\Lesson3_Persons.csproj.CoreCompileInputs.cache
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\bin\Debug\net5.0\Lesson3_Persons.exe
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\bin\Debug\net5.0\Lesson3_Persons.deps.json
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\bin\Debug\net5.0\Lesson3_Persons.runtimeconfig.json
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\bin\Debug\net5.0\Lesson3_Persons.runtimeconfig.dev.json
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\bin\Debug\net5.0\Lesson3_Persons.dll
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\bin\Debug\net5.0\ref\Lesson3_Persons.dll
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\bin\Debug\net5.0\Lesson3_Persons.pdb
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\obj\Debug\net5.0\Lesson3_Persons.dll
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\obj\Debug\net5.0\ref\Lesson3_Persons.dll
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\obj\Debug\net5.0\Lesson3_Persons.pdb
+C:\Users\siarh\RiderProjects\AQA\Lesson3_Persons\obj\Debug\net5.0\Lesson3_Persons.genruntimeconfig.cache
