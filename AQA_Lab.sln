@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentBot", "AppointmentBot\AppointmentBot.csproj", "{997EE75D-FC29-4DA5-BF44-B2C77138EBB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter", "CurrencyConverter\CurrencyConverter.csproj", "{F8F8E52F-F5D8-4A2A-97AC-1B9427A13F8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{997EE75D-FC29-4DA5-BF44-B2C77138EBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{997EE75D-FC29-4DA5-BF44-B2C77138EBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{997EE75D-FC29-4DA5-BF44-B2C77138EBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F8E52F-F5D8-4A2A-97AC-1B9427A13F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F8E52F-F5D8-4A2A-97AC-1B9427A13F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F8E52F-F5D8-4A2A-97AC-1B9427A13F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F8E52F-F5D8-4A2A-97AC-1B9427A13F8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
