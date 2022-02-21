@@ -6,7 +6,9 @@ namespace CandidatesAndEmployees
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           var employees =  RandomPersonsGenerator.GenerateEmployees();
+           var employeeReport = new EmployeeReportGenerator();
+           employeeReport.GenerateReport(employees);
         }
     }
 }
