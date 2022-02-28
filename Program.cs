@@ -6,9 +6,12 @@ namespace CandidatesAndEmployees
     {
         static void Main(string[] args)
         {
-           var employees =  RandomPersonsGenerator.GenerateEmployees();
+           var employees = RandomPersonsGenerator.GenerateEmployees();
            var employeeReport = new EmployeeReportGenerator();
            employeeReport.GenerateReport(employees);
+           var candidates = RandomPersonsGenerator.GenerateCandidates();
+           var candidateReport = new CandidateReportGenerator();
+           candidateReport.GenerateReport(candidates);
         }
     }
 }

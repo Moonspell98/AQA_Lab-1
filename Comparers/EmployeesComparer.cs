@@ -13,7 +13,7 @@ namespace CandidatesAndEmployees
             if (ReferenceEquals(null, x)) return -1;
             var companyNameComparison = string.Compare(x.Company.Name, y.Company.Name, StringComparison.Ordinal);
             if (companyNameComparison != 0) return companyNameComparison;
-            return x.Salary.CompareTo(y.Salary);
+            return y.Salary.CompareTo(x.Salary);
         }
     }
 }
