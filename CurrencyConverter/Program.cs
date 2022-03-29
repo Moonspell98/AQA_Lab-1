@@ -6,11 +6,11 @@ namespace CurrencyConverter
     {
         static void Main(string[] args)
         {
-            Converter usd = new Converter();
-            usd.CurrencyAndDenominationSeparator();
-            usd.ConvertValue();
-            usd.BankCommision();
-            usd.PrintResult();
+            ConverterBot.AskForCurrency();
+            var converter = new Converter();
+            converter.ConvertValue(ConverterBot.amount, ConverterBot.enteredCurrency, ConverterBot.enteredTargetCurrency);
+            converter.BankCommision();
+            ConverterBot.PrintResult(converter);
         }
     }
 }

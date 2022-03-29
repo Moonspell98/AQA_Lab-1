@@ -4,56 +4,21 @@ namespace CurrencyConverter
 {
     public class Converter
     {
-        private string enteredValue;
-        private string currency;
-        private string targetCurrency;
-        private int denomination;
-        private string[] currencies = {"USD", "EUR", "RUB"};
         private double exchangeRatio;
-        private double convertedValue;
-        
-        public Converter()
+        public double convertedValue;
+        public void ConvertValue(int amount, string currency, string targetCurrency)
         {
-            Console.WriteLine("Please enter denomination and currency (supported currencies: USD, EUR, RUB): ");
-            enteredValue = Console.ReadLine();
-            Console.WriteLine("Please enter target currency (supported currencies: USD, EUR, RUB): ");
-            targetCurrency = Console.ReadLine();
-            while (targetCurrency == currency)
-            {
-                Console.WriteLine("Please select other currency: ");
-                targetCurrency = Console.ReadLine();
-            }
-        }
-
-        public void CurrencyAndDenominationSeparator()
-        {
-            for (int i = 0; i < currencies.Length; i++)
-            {
-                if (enteredValue.Contains(currencies[i]))
-                {
-                    currency = currencies[i];
-                    denomination = int.Parse(enteredValue.Substring(0, enteredValue.IndexOf(currencies[i])));
-                    break;
-                }
-            }
-        }
-        public void PrintResult()
-        {
-            Console.WriteLine(convertedValue + " " + targetCurrency);
-        }
-        public void ConvertValue()
-        {
-            switch (targetCurrency)
+            switch (currency)
             {
                 case "USD":
-                    if (currency == "RUB")
+                    if (targetCurrency == "RUB")
                     {
-                        exchangeRatio = 0.013;
+                        exchangeRatio = ExchangeRatio.usdrub;
                         break;
                     }
-                    if (currency == "EUR")
+                    if (targetCurrency == "EUR")
                     {
-                        exchangeRatio = 1.14;
+                        exchangeRatio = ExchangeRatio.usdeur;
                         break;
                     }
                     else
@@ -61,14 +26,14 @@ namespace CurrencyConverter
                         break;
                     }
                 case "EUR":
-                    if (currency == "RUB")
+                    if (targetCurrency == "RUB")
                     {
-                        exchangeRatio = 0.12;
+                        exchangeRatio = ExchangeRatio.eurrub;
                         break;
                     }
-                    if (currency == "USD")
+                    if (targetCurrency == "USD")
                     {
-                        exchangeRatio = 0.88;
+                        exchangeRatio = ExchangeRatio.eurusd;
                         break;
                     }
                     else
@@ -76,14 +41,14 @@ namespace CurrencyConverter
                         break;
                     }
                 case "RUB":
-                    if (currency == "USD")
+                    if (targetCurrency == "EUR")
                     {
-                        exchangeRatio = 75.04;
+                        exchangeRatio = ExchangeRatio.rubeur;
                         break;
                     }
-                    if (currency == "EUR")
+                    if (targetCurrency == "USD")
                     {
-                        exchangeRatio = 85.65;
+                        exchangeRatio = ExchangeRatio.rubusd;
                         break;
                     }
                     else
@@ -91,11 +56,11 @@ namespace CurrencyConverter
                         break;
                     }
             }
-            convertedValue = denomination * exchangeRatio;
+            convertedValue = amount * exchangeRatio;
         }
         public void BankCommision()
         {
-            convertedValue = convertedValue - convertedValue * 0.03;
+            convertedValue -= convertedValue * 0.03;
             convertedValue = Math.Round(convertedValue, 2);
         }
     }

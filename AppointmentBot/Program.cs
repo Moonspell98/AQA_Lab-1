@@ -1,13 +1,15 @@
-﻿using System;
-
-namespace AppointmentBot
+﻿namespace AppointmentBot
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Person user = new Person();
-            user.OutputNames();
+            var user = new Person();
+            ChatBot.SetNames(user);
+            user.FirstName = NameNormalizer.Normilize(user.FirstName);
+            user.LastName = NameNormalizer.Normilize(user.LastName);
+            ChatBot.SetAppointmentDate(user);
+            ChatBot.OutputNames(user);
         }
     }
 }
