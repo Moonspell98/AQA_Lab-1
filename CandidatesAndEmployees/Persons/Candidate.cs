@@ -10,6 +10,7 @@ namespace CandidatesAndEmployees
         public string Surname { get; set; }
         public string PositionDescription { get; set; }
         public Guid id = new Guid();
+        
         public void PrintInfo()
         {
             Console.WriteLine($"Hello, I am {Name} {Surname} I want to be a {DesiredPosition} ({PositionDescription}) with a salary from {DesiredSalary}");
