@@ -8,11 +8,9 @@ namespace CandidatesAndEmployees
     {
         public static List<Candidate> GenerateCandidates()
         {
-            Random random = new Random();
-            var maxValue = random.Next(1, 100);
             var candidate = new Candidate();
             var candidates = new List<Candidate>();
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < RandomUtils.MaxPersonsCount(); i++)
             {
                 candidates.Add((Candidate)UserFactory.GenerateUser(candidate));
             }
@@ -21,11 +19,9 @@ namespace CandidatesAndEmployees
 
         public static List<Employee> GenerateEmployees()
         {
-            Random random = new Random();
-            var maxValue = random.Next(1, 100);
             var employee = new Employee();
             var employees = new List<Employee>();
-            for (int i = 0; i < maxValue; i++)
+            for (int i = 0; i < RandomUtils.MaxPersonsCount(); i++)
             {
                 employees.Add((Employee)UserFactory.GenerateUser(employee));
             }
