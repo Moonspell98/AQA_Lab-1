@@ -48,4 +48,3 @@
 Используйте [Bogus](https://github.com/bchavez/Bogus) для генерации фейковой информации.  
 Следуйте Code Conventions.  
 Постарайтесь избежать дублирования кода.  
->>>>>>> 78b6c2f641e87d86e2faefb8d4fad910cd4d57e3
