@@ -9,7 +9,7 @@ public class DriversFactory
         var drivers = new List<Driver>();
         for (int i = 0; i < driversCount; i++)
         {
-            drivers.Add(DriverGenerator.CreateDriver());
+            drivers.Add(DataGenerator.CreateDriver());
         }
         return drivers;
     }
