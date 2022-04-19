@@ -12,6 +12,4 @@ public class Engine
     public double Capacity { get; set; }
     public int MaximumSpeed { get; set; }
     public string FuelType { get; set; }
-
-    
 }

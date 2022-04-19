@@ -12,8 +12,8 @@ public class Driver : Person
     public DateTime DateOfGetLicense { get; set; }
     public Guid LicenseId { get; set; }
 
-    public int GetDrivingExperience()
+    public double GetDrivingExperience()
     {
-        return Convert.ToInt16(DateTime.Now.Subtract(DateOfGetLicense).Days / 365.2425);
+        return Math.Round(Convert.ToDouble(DateTime.Now.Subtract(DateOfGetLicense).Days / 365.2425), 1);
     }
 }

@@ -23,6 +23,7 @@ public class NumberChoiceValidator
                 IsValid = true;
             }
         }
+
         return ParsedResult;
-    } 
+    }
 }

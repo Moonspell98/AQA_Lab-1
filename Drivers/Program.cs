@@ -3,7 +3,9 @@
 using Drivers;
 
 var drivers = DriversFactory.GenerateDrivers(3);
-ChatBot.ShowAllDrivers(drivers);
-ChatBot.SelectDriver();
-ChatBot.ShowInfo(drivers);
-Console.WriteLine(11 / 100);
+var chatBot = new ChatBot(drivers);
+chatBot.ShowAllDrivers();
+chatBot.SelectDriver();
+chatBot.ShowCars();
+chatBot.SelectCar();
+chatBot.CalculateVehicleAbilities();
