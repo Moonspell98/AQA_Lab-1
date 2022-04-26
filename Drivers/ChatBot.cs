@@ -9,13 +9,11 @@ public class ChatBot
     private Driver _selectedDriver;
     private Vehicle _selectedVehicle;
     private int SelectedDriverNumber;
-    private int NumberOfDrivers;
     private int SelectedVehicleNumber;
 
     public ChatBot(List<Driver> drivers)
     {
         _drivers = drivers;
-        NumberOfDrivers = _drivers.Count;
     }
 
     public void ShowAllDrivers()
@@ -23,7 +21,7 @@ public class ChatBot
         Console.WriteLine("| {0, 2} | {1,25} | {2, 15} | {3,20} | {4,37} | {5,27} |", "#", "Driver Full Name",
             "Date of Birth",
             "License issue date", "License ID", "Driving Experience (Years)");
-        for (int i = 0; i < NumberOfDrivers; i++)
+        for (int i = 0; i < _drivers.Count; i++)
         {
             Console.WriteLine("| {0, 2} | {1,25} | {2, 15} | {3,20} | {4,37} | {5,27} |", i + 1,
                 _drivers[i].Name + " " + _drivers[i].Surname, DateOnly.FromDateTime(_drivers[i].DateOfBirth),
@@ -35,7 +33,7 @@ public class ChatBot
     public void SelectDriver()
     {
         SelectedDriverNumber =
-            NumberChoiceValidator.Validate(1, NumberOfDrivers, "Please, select driver (enter driver's #):");
+            NumberChoiceValidator.Validate(1, _drivers.Count, "Please, select driver (enter driver's #):");
         _selectedDriver = _drivers[SelectedDriverNumber - 1];
     }
 
