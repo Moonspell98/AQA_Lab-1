@@ -21,9 +21,9 @@ public class ChatBot
         Console.WriteLine("| {0, 2} | {1,25} | {2, 15} | {3,20} | {4,37} | {5,27} |", "#", "Driver Full Name",
             "Date of Birth",
             "License issue date", "License ID", "Driving Experience (Years)");
+        int i = 1;
         foreach (var driver in _drivers)
         {
-            int i = 1;
             Console.WriteLine("| {0, 2} | {1,25} | {2, 15} | {3,20} | {4,37} | {5,27} |", i++,
                 driver.Name + " " + driver.Surname, DateOnly.FromDateTime(driver.DateOfBirth),
                 DateOnly.FromDateTime(driver.DateOfGetLicense), driver.LicenseId,
@@ -44,14 +44,15 @@ public class ChatBot
                           "'s cars list:");
         Console.WriteLine("| {0,2} | {1,15} | {2, 10} | {3,30} | {4,15} |", "#", "Model", "Capacity",
             "Fuel Consumption (per 100 km)", "Maximum Speed");
-        for (int i = 0; i < _selectedDriver.Vehicles.Count; i++)
+        int i = 1;
+        foreach (var vehicle in _selectedDriver.Vehicles)
         {
             Console.WriteLine("| {0,2} | {1,15} | {2, 10} | {3,30} | {4,15} |",
-                i + 1,
-                _selectedDriver.Vehicles[i].Model,
-                _selectedDriver.Vehicles[i].Engine.Capacity,
-                _selectedDriver.Vehicles[i].FuelConsumption,
-                _selectedDriver.Vehicles[i].Engine.MaximumSpeed);
+                i++,
+                vehicle.Model,
+                vehicle.Engine.Capacity,
+                vehicle.FuelConsumption,
+                vehicle.Engine.MaximumSpeed);
         }
     }
 
