@@ -15,12 +15,7 @@ public class DataGenerator
             .RuleFor(p => p.DateOfGetLicense, (f, p) => f.Date.Between(p.DateOfBirth.AddYears(16), DateTime.Now))
             .RuleFor(p => p.LicenseId, f => f.Random.Guid());
         Driver driver = fakeDriver.Generate();
-        driver.Vehicles = new List<Vehicle>();
-        for (int i = 0; i <= RandomUtils.GetDriverCarsAmount(); i++)
-        {
-            driver.Vehicles.Add(CreateVehicle());
-        }
-
+        driver.Vehicles = CreateVehicles(RandomUtils.GetDriverCarsAmount());
         return driver;
     }
 
@@ -35,6 +30,17 @@ public class DataGenerator
         Vehicle vehicle = fakeVehicle.Generate();
         vehicle.Engine = CreateEngine();
         return vehicle;
+    }
+
+    public static List<Vehicle> CreateVehicles(int vehiclesAmount)
+    {
+        var vehicles = new List<Vehicle>();
+        for (int i = 0; i < vehiclesAmount; i++)
+        {
+            vehicles.Add(CreateVehicle());
+        }
+
+        return vehicles;
     }
 
     public static Engine CreateEngine()
