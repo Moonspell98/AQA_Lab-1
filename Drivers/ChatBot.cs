@@ -21,12 +21,13 @@ public class ChatBot
         Console.WriteLine("| {0, 2} | {1,25} | {2, 15} | {3,20} | {4,37} | {5,27} |", "#", "Driver Full Name",
             "Date of Birth",
             "License issue date", "License ID", "Driving Experience (Years)");
-        for (int i = 0; i < _drivers.Count; i++)
+        foreach (var driver in _drivers)
         {
-            Console.WriteLine("| {0, 2} | {1,25} | {2, 15} | {3,20} | {4,37} | {5,27} |", i + 1,
-                _drivers[i].Name + " " + _drivers[i].Surname, DateOnly.FromDateTime(_drivers[i].DateOfBirth),
-                DateOnly.FromDateTime(_drivers[i].DateOfGetLicense), _drivers[i].LicenseId,
-                _drivers[i].GetDrivingExperience());
+            int i = 1;
+            Console.WriteLine("| {0, 2} | {1,25} | {2, 15} | {3,20} | {4,37} | {5,27} |", i++,
+                driver.Name + " " + driver.Surname, DateOnly.FromDateTime(driver.DateOfBirth),
+                DateOnly.FromDateTime(driver.DateOfGetLicense), driver.LicenseId,
+                driver.GetDrivingExperience());
         }
     }
 
