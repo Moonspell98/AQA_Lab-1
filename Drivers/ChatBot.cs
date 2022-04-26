@@ -65,11 +65,11 @@ public class ChatBot
 
     public void CalculateVehicleAbilities()
     {
-        int distance = NumberChoiceValidator.Validate(1, Vehicle.maxDistance,
+        int distance = NumberChoiceValidator.Validate(1, Vehicle.MaxDistance,
             "Enter distance to calculate fuel consumption (1-10000 km)");
         Console.WriteLine(
             $"{_selectedVehicle.Model}'s fuel consumption per {distance} km is {_selectedVehicle.FuelConsumptionPerDistance(distance)}");
-        distance = NumberChoiceValidator.Validate(1, Vehicle.maxDistance,
+        distance = NumberChoiceValidator.Validate(1, Vehicle.MaxDistance,
             "Specify the distance to calculate the time for which the car will be able to pass it at maximum speed (1-10000 km)");
         Console.WriteLine(
             $"{_selectedVehicle.Model} can pass {distance} km in {_selectedVehicle.TimePerDistance(distance)} hours");

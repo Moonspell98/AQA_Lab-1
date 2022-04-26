@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using Drivers;
+﻿using Drivers;
 
 var drivers = DriversFactory.GenerateDrivers(3);
 var chatBot = new ChatBot(drivers);

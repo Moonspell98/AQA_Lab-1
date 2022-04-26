@@ -4,12 +4,15 @@ namespace Drivers;
 
 public class Vehicle
 {
-    public static int maxSeatsCount = 8;
-    public static int minSeatsCount = 2;
-    public static int minYear = 1980;
-    public static int maxFuelConsumption = 20;
-    public static int minFuelConsumption = 3;
-    public static int maxDistance = 10000;
+    public static int MaxSeatsCount = 8;
+    public static int MinSeatsCount = 2;
+    
+    public static int MinYear = 1980;
+    
+    public static int MaxFuelConsumption = 20;
+    public static int MinFuelConsumption = 3;
+    
+    public static int MaxDistance = 10000;
     public string Model { get; set; }
     public int Year { get; set; }
     public Driver Owner { get; set; }
