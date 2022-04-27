@@ -6,7 +6,6 @@ public class RandomUtils
 {
     public static int GetDriverCarsAmount()
     {
-        Random random = new Random();
-        return random.Next(Driver.MinCarsAmount, Driver.MaxCarsAmount);
+        return new Random().Next(Driver.MinCarsAmount, Driver.MaxCarsAmount);
     }
 }

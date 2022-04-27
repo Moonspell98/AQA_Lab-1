@@ -13,6 +13,7 @@ public class Vehicle
     public static int MinFuelConsumption = 3;
     
     public static int MaxDistance = 10000;
+    
     public string Model { get; set; }
     public int Year { get; set; }
     public Driver Owner { get; set; }

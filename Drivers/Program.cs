@@ -1,6 +1,6 @@
 ﻿using Drivers;
 
-var drivers = DriversFactory.GenerateDrivers(3);
+var drivers = DataGenerator.CreateDrivers(3);
 var chatBot = new ChatBot(drivers);
 chatBot.ShowAllDrivers();
 chatBot.SelectDriver();

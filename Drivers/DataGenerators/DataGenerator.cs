@@ -5,7 +5,7 @@ namespace Drivers;
 
 public class DataGenerator
 {
-    public static Driver CreateDriver()
+    public static List<Driver> CreateDrivers(int driversCount)
     {
         var fakeDriver = new Faker<Driver>()
             .RuleFor(p => p.Surname, f => f.Name.LastName())
@@ -13,13 +13,12 @@ public class DataGenerator
             .RuleFor(p => p.DateOfBirth,
                 f => f.Date.Past(Driver.DriverMaxAge, DateTime.Now.AddYears(-Driver.DriverMinAge)))
             .RuleFor(p => p.DateOfGetLicense, (f, p) => f.Date.Between(p.DateOfBirth.AddYears(16), DateTime.Now))
-            .RuleFor(p => p.LicenseId, f => f.Random.Guid());
-        Driver driver = fakeDriver.Generate();
-        driver.Vehicles = CreateVehicles(RandomUtils.GetDriverCarsAmount());
-        return driver;
+            .RuleFor(p => p.LicenseId, f => f.Random.Guid())
+            .RuleFor(p => p.Vehicles, f => CreateVehicles(RandomUtils.GetDriverCarsAmount()));
+        return fakeDriver.Generate(driversCount);
     }
 
-    public static Vehicle CreateVehicle()
+    public static List<Vehicle> CreateVehicles(int vehiclesCount)
     {
         var fakeVehicle = new Faker<Vehicle>()
             .RuleFor(v => v.Model, f => f.Vehicle.Model())
@@ -28,19 +27,7 @@ public class DataGenerator
             .RuleFor(v => v.IsPricep, f => f.Random.Bool())
             .RuleFor(v => v.SeatsCount, f => f.Random.Int(Vehicle.MinSeatsCount, Vehicle.MaxSeatsCount))
             .RuleFor(v => v.Engine, f => CreateEngine());
-        Vehicle vehicle = fakeVehicle.Generate();
-        return vehicle;
-    }
-
-    public static List<Vehicle> CreateVehicles(int vehiclesAmount)
-    {
-        var vehicles = new List<Vehicle>();
-        for (int i = 0; i < vehiclesAmount; i++)
-        {
-            vehicles.Add(CreateVehicle());
-        }
-
-        return vehicles;
+        return fakeVehicle.Generate(vehiclesCount);
     }
 
     public static Engine CreateEngine()
