@@ -26,9 +26,9 @@ public class DataGenerator
             .RuleFor(v => v.Year, f => f.Random.Int(Vehicle.MinYear, DateTime.Now.Year))
             .RuleFor(v => v.FuelConsumption, f => f.Random.Int(Vehicle.MinFuelConsumption, Vehicle.MaxFuelConsumption))
             .RuleFor(v => v.IsPricep, f => f.Random.Bool())
-            .RuleFor(v => v.SeatsCount, f => f.Random.Int(Vehicle.MinSeatsCount, Vehicle.MaxSeatsCount));
+            .RuleFor(v => v.SeatsCount, f => f.Random.Int(Vehicle.MinSeatsCount, Vehicle.MaxSeatsCount))
+            .RuleFor(v => v.Engine, f => CreateEngine());
         Vehicle vehicle = fakeVehicle.Generate();
-        vehicle.Engine = CreateEngine();
         return vehicle;
     }
 
