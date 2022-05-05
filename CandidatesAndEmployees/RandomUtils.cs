@@ -4,9 +4,10 @@ namespace CandidatesAndEmployees
 {
     public class RandomUtils
     {
+        static Random random = new Random();
+
         public static int MaxPersonsCount()
         {
-            Random random = new Random();
             return random.Next(1, 100);
         }
     }

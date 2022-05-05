@@ -11,10 +11,12 @@ namespace CandidatesAndEmployees
             {
                 generatedPerson = CreateCandidate();
             }
+
             if (person is Employee)
             {
                 generatedPerson = CreateEmployee();
             }
+
             return generatedPerson;
         }
 
@@ -25,7 +27,8 @@ namespace CandidatesAndEmployees
                 .RuleFor(cn => cn.PositionDescription, f => f.Name.JobDescriptor())
                 .RuleFor(cn => cn.Name, f => f.Person.FirstName)
                 .RuleFor(cn => cn.Surname, f => f.Person.LastName)
-                .RuleFor(cn => cn.DesiredSalary, f => f.Person.Random.Int(500, 4000))
+                .RuleFor(cn => cn.DesiredSalary,
+                    f => f.Person.Random.Int(Candidate.minDesiredSalary, Candidate.maxDesiredSalary))
                 .RuleFor(cn => cn.id, f => f.Random.Guid());
             return fakeCandidate.Generate();
         }
@@ -37,8 +40,8 @@ namespace CandidatesAndEmployees
                 .RuleFor(em => em.Surname, f => f.Person.LastName)
                 .RuleFor(em => em.Position, f => f.Name.JobTitle())
                 .RuleFor(em => em.PositionDescription, f => f.Name.JobDescriptor())
-                .RuleFor(em => em.id, f => f.Random.Guid())
-                .RuleFor(em => em.Salary, f => f.Random.Int(500, 5000))
+                .RuleFor(em => em.Id, f => f.Random.Guid())
+                .RuleFor(em => em.Salary, f => f.Random.Int(Employee.minSalary, Employee.maxSalary))
                 .RuleFor(em => em.Company, f => CreateCompany());
             return fakeEmployee.Generate();
         }
