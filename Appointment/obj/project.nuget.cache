@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "it24Dv9UTRNb9uwH1V21cHpao5mPX2XZ6DjX5NcmJ+ZbsSesmhvZwWaA7AQQQ6xGnQe7AHcX/2XrlogQ+SwsaQ==",
+  "dgSpecHash": "IPHuhEkQl9nYTFW39A8d4tuIH6xchp6UwS2APxBrG4DFcsWFraRSVX7lZBsZzv4e2AoUUlx90zZLB1W6Wuz0pg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\siarh\\RiderProjects\\AQA\\Appointment\\Appointment.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Siarhei.Hlitsuk\\NewRiderProjects\\Appointment\\Appointment.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Siarhei.Hlitsuk\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Siarhei.Hlitsuk\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Siarhei.Hlitsuk\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Siarhei.Hlitsuk\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "jLK9o+qwaOgd1ftFhzLQToOjCDLQ5dc9a0L0zkz8aaFlVq+BaoJVSeOnEBvTC84gQInPYbYMkxj1Vj6Yzm4f3g==",
+  "dgSpecHash": "4+fbtugNvp8a+FDEOC7pN8FmiB0wymghUBsq7fSybfGfUCcPqedSKbLcNyGeTDstN3r+rFO3QZ3UK4xymbh5fA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\siarh\\RiderProjects\\AQA\\Lesson3_Persons\\Lesson3_Persons.csproj",
+  "projectFilePath": "C:\\Users\\Siarhei.Hlitsuk\\NewRiderProjects\\Lesson3_Persons\\Lesson3_Persons.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\siarh\\.nuget\\packages\\bogus\\34.0.1\\bogus.34.0.1.nupkg.sha512"
+    "C:\\Users\\Siarhei.Hlitsuk\\.nuget\\packages\\bogus\\34.0.1\\bogus.34.0.1.nupkg.sha512",
+    "C:\\Users\\Siarhei.Hlitsuk\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Siarhei.Hlitsuk\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Siarhei.Hlitsuk\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Siarhei.Hlitsuk\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512"
   ],
   "logs": []
 }
