@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "CTElsfd4OxWPCZE3bgkJL/+oZDsodwKqLeAv9aCedHrq/VvW9Ed1qy4Qog82ZNi2ihJfWXDFxV4NJmhEsZsL6w==",
+  "dgSpecHash": "IfyPK9Tm4TbZSAm732++M6v/N6liJ0LSIMTRLW/bVjuLewHg2VMX6YYG+kVSnnt+wD/qIGIjnlf1Fg9QT5l+qg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\siarh\\RiderProjects\\AQA\\CurrencyConverter\\CurrencyConverter.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Siarhei.Hlitsuk\\NewRiderProjects\\CurrencyConverter\\CurrencyConverter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Siarhei.Hlitsuk\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Siarhei.Hlitsuk\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Siarhei.Hlitsuk\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Siarhei.Hlitsuk\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512"
+  ],
   "logs": []
 }
