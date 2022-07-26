@@ -5,6 +5,7 @@ namespace Arrays_and_collections;
 public class TextValidator
 {
     private static string pattern = @"\W|\d";
+
     public static string Validate(string textMessage)
     {
         bool isValid = false;
@@ -27,6 +28,8 @@ public class TextValidator
                 isValid = true;
             }
         }
+
+        Console.Clear();
 
         return enteredValue;
     }

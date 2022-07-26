@@ -24,6 +24,7 @@ public class NumberValidator
             }
         }
 
+        Console.Clear();
         return ParsedResult;
     }
 
@@ -49,6 +50,7 @@ public class NumberValidator
             }
         }
 
+        Console.Clear();
         return ParsedResult;
     }
 }
